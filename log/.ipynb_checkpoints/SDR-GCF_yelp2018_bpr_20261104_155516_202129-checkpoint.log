@@ -1,0 +1,54 @@
+{
+  "dataset": "yelp2018",
+  "loss": "bpr",
+  "data_dir": "/root/autodl-tmp/SDR-GCF/data",
+  "train_file": null,
+  "test_file": null,
+  "log_dir": "/root/autodl-tmp/SDR-GCF/log",
+  "device": "auto",
+  "seed": 2026,
+  "epochs": 500,
+  "patience": 20,
+  "batch_size": 2048,
+  "testbatch": 512,
+  "dim": 64,
+  "K": 3,
+  "lr": 0.0005,
+  "decay": 0.0001,
+  "init": "normal",
+  "init_weight": 0.01,
+  "tau": 0.14,
+  "uniformity": 1.0,
+  "uniformity_t": 2.0,
+  "dropout": 0.0,
+  "mu": 0.4,
+  "filter": 1,
+  "structure_weight": 0.6,
+  "cap": 1.0,
+  "filter_schedule": "adaptive",
+  "filter_epoch": 3,
+  "min_epoch": 2,
+  "max_epoch": 4,
+  "stable_checks": 1,
+  "jaccard": 0.9,
+  "coverage": 0.99,
+  "rho": 0.9,
+  "q_loss": 0.8,
+  "q_structure": 0.2,
+  "topk": 10,
+  "chunk_size": 8192
+}
+Epoch: 001, loss: 0.14557, R@20: 0.047202, N@20: 0.039013, time: 9.51 seconds
+Epoch: 002, loss: 0.09638, R@20: 0.053585, N@20: 0.043821, time: 10.09 seconds
+Filtering: {'epoch': 3, 'removed': 105254, 'retained': 1132005}
+Epoch: 003, loss: 0.08524, R@20: 0.051602, N@20: 0.040626, time: 9.63 seconds
+Epoch: 004, loss: 0.06670, R@20: 0.057444, N@20: 0.046862, time: 7.91 seconds
+Epoch: 005, loss: 0.06313, R@20: 0.058860, N@20: 0.047995, time: 7.93 seconds
+Epoch: 006, loss: 0.06100, R@20: 0.059037, N@20: 0.048164, time: 7.92 seconds
+Epoch: 007, loss: 0.05864, R@20: 0.059955, N@20: 0.048772, time: 7.92 seconds
+Epoch: 008, loss: 0.05675, R@20: 0.060222, N@20: 0.049125, time: 7.93 seconds
+Epoch: 009, loss: 0.05502, R@20: 0.060994, N@20: 0.049736, time: 7.92 seconds
+Epoch: 010, loss: 0.05345, R@20: 0.061350, N@20: 0.050377, time: 7.93 seconds
+Epoch: 011, loss: 0.05230, R@20: 0.062445, N@20: 0.050875, time: 7.95 seconds
+Epoch: 012, loss: 0.05083, R@20: 0.062886, N@20: 0.051090, time: 7.93 seconds
+Epoch: 013, loss: 0.04986, R@20: 0.063636, N@20: 0.051556, time: 7.92 seconds

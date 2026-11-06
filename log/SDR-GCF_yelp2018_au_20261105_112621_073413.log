@@ -1,0 +1,80 @@
+{
+  "dataset": "yelp2018",
+  "loss": "au",
+  "data_dir": "/root/autodl-tmp/SDR-GCF/data",
+  "train_file": null,
+  "test_file": null,
+  "log_dir": "/root/autodl-tmp/SDR-GCF/log",
+  "device": "auto",
+  "seed": 2026,
+  "epochs": 500,
+  "patience": 20,
+  "batch_size": 2048,
+  "testbatch": 512,
+  "dim": 64,
+  "K": 3,
+  "lr": 0.001,
+  "decay": 0.0,
+  "init": "xavier",
+  "init_weight": 1.0,
+  "tau": 0.14,
+  "uniformity": 1.0,
+  "uniformity_t": 2.0,
+  "dropout": 0.0,
+  "mu": 1.0,
+  "filter": 1,
+  "structure_weight": 0.6,
+  "cap": 1.0,
+  "filter_schedule": "adaptive",
+  "filter_epoch": 3,
+  "min_epoch": 2,
+  "max_epoch": 4,
+  "stable_checks": 1,
+  "jaccard": 0.9,
+  "coverage": 0.99,
+  "rho": 0.9,
+  "q_loss": 0.8,
+  "q_structure": 0.2,
+  "topk": 10,
+  "chunk_size": 8192
+}
+Epoch: 001, loss: -6.30544, R@20: 0.067083, N@20: 0.054484, time: 147.74 seconds
+Epoch: 002, loss: -6.59463, R@20: 0.069680, N@20: 0.056922, time: 154.58 seconds
+Filtering: {'epoch': 3, 'removed': 95781, 'retained': 1141478}
+Epoch: 003, loss: -6.60957, R@20: 0.070484, N@20: 0.057994, time: 142.87 seconds
+Epoch: 004, loss: -6.67188, R@20: 0.071121, N@20: 0.058529, time: 136.09 seconds
+Epoch: 005, loss: -6.67734, R@20: 0.072044, N@20: 0.059149, time: 131.58 seconds
+Epoch: 006, loss: -6.67973, R@20: 0.072103, N@20: 0.059353, time: 131.61 seconds
+Epoch: 007, loss: -6.68180, R@20: 0.072279, N@20: 0.059466, time: 131.70 seconds
+Epoch: 008, loss: -6.68345, R@20: 0.071936, N@20: 0.059264, time: 134.33 seconds
+Epoch: 009, loss: -6.68478, R@20: 0.072182, N@20: 0.059492, time: 129.91 seconds
+Epoch: 010, loss: -6.68601, R@20: 0.072011, N@20: 0.059425, time: 136.18 seconds
+Epoch: 011, loss: -6.68693, R@20: 0.072227, N@20: 0.059629, time: 130.46 seconds
+Epoch: 012, loss: -6.68776, R@20: 0.072481, N@20: 0.059742, time: 134.08 seconds
+Epoch: 013, loss: -6.68881, R@20: 0.072392, N@20: 0.059612, time: 107.68 seconds
+Epoch: 014, loss: -6.68944, R@20: 0.072683, N@20: 0.059881, time: 87.09 seconds
+Epoch: 015, loss: -6.69009, R@20: 0.072283, N@20: 0.059530, time: 91.60 seconds
+Epoch: 016, loss: -6.69080, R@20: 0.072377, N@20: 0.059598, time: 91.58 seconds
+Epoch: 017, loss: -6.69152, R@20: 0.072161, N@20: 0.059471, time: 87.97 seconds
+Epoch: 018, loss: -6.69212, R@20: 0.072583, N@20: 0.059761, time: 91.50 seconds
+Epoch: 019, loss: -6.69287, R@20: 0.072202, N@20: 0.059407, time: 89.23 seconds
+Epoch: 020, loss: -6.69336, R@20: 0.072267, N@20: 0.059520, time: 88.89 seconds
+Epoch: 021, loss: -6.69384, R@20: 0.072207, N@20: 0.059528, time: 91.53 seconds
+Epoch: 022, loss: -6.69429, R@20: 0.072312, N@20: 0.059577, time: 88.19 seconds
+Epoch: 023, loss: -6.69473, R@20: 0.072271, N@20: 0.059439, time: 89.85 seconds
+Epoch: 024, loss: -6.69511, R@20: 0.072098, N@20: 0.059499, time: 91.63 seconds
+Epoch: 025, loss: -6.69569, R@20: 0.072151, N@20: 0.059432, time: 87.14 seconds
+Epoch: 026, loss: -6.69600, R@20: 0.072021, N@20: 0.059459, time: 91.60 seconds
+Epoch: 027, loss: -6.69634, R@20: 0.072344, N@20: 0.059586, time: 91.56 seconds
+Epoch: 028, loss: -6.69684, R@20: 0.072085, N@20: 0.059493, time: 86.94 seconds
+Epoch: 029, loss: -6.69704, R@20: 0.072168, N@20: 0.059401, time: 91.55 seconds
+Epoch: 030, loss: -6.69750, R@20: 0.072089, N@20: 0.059399, time: 91.54 seconds
+Epoch: 031, loss: -6.69770, R@20: 0.072027, N@20: 0.059397, time: 87.10 seconds
+Epoch: 032, loss: -6.69808, R@20: 0.072013, N@20: 0.059402, time: 91.56 seconds
+Epoch: 033, loss: -6.69830, R@20: 0.072073, N@20: 0.059277, time: 91.32 seconds
+Epoch: 034, loss: -6.69848, R@20: 0.072218, N@20: 0.059490, time: 88.17 seconds
+
+========== BEST RESULT ==========
+Best Epoch: 14
+Recall@20: 0.072683, NDCG@20: 0.059881
+Log saved to: /root/autodl-tmp/SDR-GCF/log/SDR-GCF_yelp2018_au_20261105_112621_073413.log

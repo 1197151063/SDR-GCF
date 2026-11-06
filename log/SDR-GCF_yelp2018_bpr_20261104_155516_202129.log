@@ -1,0 +1,109 @@
+{
+  "dataset": "yelp2018",
+  "loss": "bpr",
+  "data_dir": "/root/autodl-tmp/SDR-GCF/data",
+  "train_file": null,
+  "test_file": null,
+  "log_dir": "/root/autodl-tmp/SDR-GCF/log",
+  "device": "auto",
+  "seed": 2026,
+  "epochs": 500,
+  "patience": 20,
+  "batch_size": 2048,
+  "testbatch": 512,
+  "dim": 64,
+  "K": 3,
+  "lr": 0.0005,
+  "decay": 0.0001,
+  "init": "normal",
+  "init_weight": 0.01,
+  "tau": 0.14,
+  "uniformity": 1.0,
+  "uniformity_t": 2.0,
+  "dropout": 0.0,
+  "mu": 0.4,
+  "filter": 1,
+  "structure_weight": 0.6,
+  "cap": 1.0,
+  "filter_schedule": "adaptive",
+  "filter_epoch": 3,
+  "min_epoch": 2,
+  "max_epoch": 4,
+  "stable_checks": 1,
+  "jaccard": 0.9,
+  "coverage": 0.99,
+  "rho": 0.9,
+  "q_loss": 0.8,
+  "q_structure": 0.2,
+  "topk": 10,
+  "chunk_size": 8192
+}
+Epoch: 001, loss: 0.14557, R@20: 0.047202, N@20: 0.039013, time: 9.51 seconds
+Epoch: 002, loss: 0.09638, R@20: 0.053585, N@20: 0.043821, time: 10.09 seconds
+Filtering: {'epoch': 3, 'removed': 105254, 'retained': 1132005}
+Epoch: 003, loss: 0.08524, R@20: 0.051602, N@20: 0.040626, time: 9.63 seconds
+Epoch: 004, loss: 0.06670, R@20: 0.057444, N@20: 0.046862, time: 7.91 seconds
+Epoch: 005, loss: 0.06313, R@20: 0.058860, N@20: 0.047995, time: 7.93 seconds
+Epoch: 006, loss: 0.06100, R@20: 0.059037, N@20: 0.048164, time: 7.92 seconds
+Epoch: 007, loss: 0.05864, R@20: 0.059955, N@20: 0.048772, time: 7.92 seconds
+Epoch: 008, loss: 0.05675, R@20: 0.060222, N@20: 0.049125, time: 7.93 seconds
+Epoch: 009, loss: 0.05502, R@20: 0.060994, N@20: 0.049736, time: 7.92 seconds
+Epoch: 010, loss: 0.05345, R@20: 0.061350, N@20: 0.050377, time: 7.93 seconds
+Epoch: 011, loss: 0.05230, R@20: 0.062445, N@20: 0.050875, time: 7.95 seconds
+Epoch: 012, loss: 0.05083, R@20: 0.062886, N@20: 0.051090, time: 7.93 seconds
+Epoch: 013, loss: 0.04986, R@20: 0.063636, N@20: 0.051556, time: 7.92 seconds
+Epoch: 014, loss: 0.04883, R@20: 0.063751, N@20: 0.051788, time: 7.95 seconds
+Epoch: 015, loss: 0.04725, R@20: 0.063584, N@20: 0.051659, time: 7.99 seconds
+Epoch: 016, loss: 0.04576, R@20: 0.064683, N@20: 0.052446, time: 7.90 seconds
+Epoch: 017, loss: 0.04636, R@20: 0.064908, N@20: 0.052882, time: 7.96 seconds
+Epoch: 018, loss: 0.04480, R@20: 0.064712, N@20: 0.052551, time: 7.95 seconds
+Epoch: 019, loss: 0.04297, R@20: 0.064776, N@20: 0.052863, time: 7.95 seconds
+Epoch: 020, loss: 0.04291, R@20: 0.064935, N@20: 0.053010, time: 7.92 seconds
+Epoch: 021, loss: 0.04254, R@20: 0.064936, N@20: 0.052836, time: 7.94 seconds
+Epoch: 022, loss: 0.04203, R@20: 0.065105, N@20: 0.053072, time: 7.91 seconds
+Epoch: 023, loss: 0.04085, R@20: 0.066477, N@20: 0.054055, time: 7.87 seconds
+Epoch: 024, loss: 0.04061, R@20: 0.066254, N@20: 0.054101, time: 7.80 seconds
+Epoch: 025, loss: 0.04032, R@20: 0.065956, N@20: 0.053724, time: 7.88 seconds
+Epoch: 026, loss: 0.03960, R@20: 0.064505, N@20: 0.052720, time: 8.03 seconds
+Epoch: 027, loss: 0.03836, R@20: 0.065398, N@20: 0.053142, time: 7.99 seconds
+Epoch: 028, loss: 0.03783, R@20: 0.066235, N@20: 0.054053, time: 8.12 seconds
+Epoch: 029, loss: 0.03753, R@20: 0.065915, N@20: 0.053982, time: 8.02 seconds
+Epoch: 030, loss: 0.03745, R@20: 0.066655, N@20: 0.054285, time: 8.07 seconds
+Epoch: 031, loss: 0.03659, R@20: 0.065406, N@20: 0.053239, time: 7.95 seconds
+Epoch: 032, loss: 0.03636, R@20: 0.066394, N@20: 0.053879, time: 7.94 seconds
+Epoch: 033, loss: 0.03666, R@20: 0.065968, N@20: 0.053807, time: 7.87 seconds
+Epoch: 034, loss: 0.03497, R@20: 0.065490, N@20: 0.053253, time: 7.84 seconds
+Epoch: 035, loss: 0.03464, R@20: 0.066310, N@20: 0.053995, time: 7.88 seconds
+Epoch: 036, loss: 0.03448, R@20: 0.065512, N@20: 0.053508, time: 7.92 seconds
+Epoch: 037, loss: 0.03372, R@20: 0.067296, N@20: 0.055017, time: 7.95 seconds
+Epoch: 038, loss: 0.03310, R@20: 0.065846, N@20: 0.053966, time: 8.01 seconds
+Epoch: 039, loss: 0.03290, R@20: 0.066221, N@20: 0.054215, time: 8.01 seconds
+Epoch: 040, loss: 0.03198, R@20: 0.067080, N@20: 0.055006, time: 7.89 seconds
+Epoch: 041, loss: 0.03235, R@20: 0.066801, N@20: 0.054954, time: 7.88 seconds
+Epoch: 042, loss: 0.03247, R@20: 0.067077, N@20: 0.055168, time: 7.89 seconds
+Epoch: 043, loss: 0.03130, R@20: 0.067631, N@20: 0.055586, time: 7.89 seconds
+Epoch: 044, loss: 0.03157, R@20: 0.066607, N@20: 0.054697, time: 7.93 seconds
+Epoch: 045, loss: 0.03058, R@20: 0.066735, N@20: 0.054483, time: 7.93 seconds
+Epoch: 046, loss: 0.03081, R@20: 0.066938, N@20: 0.054793, time: 7.95 seconds
+Epoch: 047, loss: 0.03038, R@20: 0.066426, N@20: 0.054432, time: 7.97 seconds
+Epoch: 048, loss: 0.03005, R@20: 0.066824, N@20: 0.054878, time: 7.92 seconds
+Epoch: 049, loss: 0.02962, R@20: 0.067223, N@20: 0.055205, time: 7.93 seconds
+Epoch: 050, loss: 0.02907, R@20: 0.066814, N@20: 0.054872, time: 7.89 seconds
+Epoch: 051, loss: 0.02851, R@20: 0.066277, N@20: 0.054283, time: 7.92 seconds
+Epoch: 052, loss: 0.02870, R@20: 0.066829, N@20: 0.054755, time: 8.10 seconds
+Epoch: 053, loss: 0.02827, R@20: 0.065880, N@20: 0.054050, time: 8.04 seconds
+Epoch: 054, loss: 0.02830, R@20: 0.065777, N@20: 0.054136, time: 8.01 seconds
+Epoch: 055, loss: 0.02803, R@20: 0.066372, N@20: 0.054617, time: 7.99 seconds
+Epoch: 056, loss: 0.02734, R@20: 0.066708, N@20: 0.054629, time: 8.02 seconds
+Epoch: 057, loss: 0.02721, R@20: 0.066130, N@20: 0.054270, time: 7.96 seconds
+Epoch: 058, loss: 0.02706, R@20: 0.066437, N@20: 0.054848, time: 7.97 seconds
+Epoch: 059, loss: 0.02685, R@20: 0.066143, N@20: 0.054259, time: 7.94 seconds
+Epoch: 060, loss: 0.02604, R@20: 0.065475, N@20: 0.053982, time: 7.98 seconds
+Epoch: 061, loss: 0.02636, R@20: 0.065421, N@20: 0.053968, time: 7.96 seconds
+Epoch: 062, loss: 0.02627, R@20: 0.066526, N@20: 0.054635, time: 7.97 seconds
+Epoch: 063, loss: 0.02599, R@20: 0.066423, N@20: 0.054739, time: 7.95 seconds
+
+========== BEST RESULT ==========
+Best Epoch: 43
+Recall@20: 0.067631, NDCG@20: 0.055586
+Log saved to: /root/autodl-tmp/SDR-GCF/log/SDR-GCF_yelp2018_bpr_20261104_155516_202129.log

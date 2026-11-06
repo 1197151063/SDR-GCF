@@ -1,0 +1,180 @@
+{
+  "dataset": "yelp2018",
+  "loss": "ssm",
+  "data_dir": "/root/autodl-tmp/SDR-GCF/data",
+  "train_file": null,
+  "test_file": null,
+  "log_dir": "/root/autodl-tmp/SDR-GCF/log",
+  "device": "auto",
+  "seed": 2026,
+  "epochs": 500,
+  "patience": 20,
+  "batch_size": 2048,
+  "testbatch": 512,
+  "dim": 64,
+  "K": 3,
+  "lr": 0.001,
+  "decay": 0.0,
+  "init": "xavier",
+  "init_weight": 1.0,
+  "tau": 0.14,
+  "uniformity": 1.0,
+  "uniformity_t": 2.0,
+  "dropout": 0.0,
+  "mu": 0.001,
+  "filter": 0,
+  "structure_weight": 0.6,
+  "cap": 1.0,
+  "filter_schedule": "adaptive",
+  "filter_epoch": 3,
+  "min_epoch": 2,
+  "max_epoch": 4,
+  "stable_checks": 1,
+  "jaccard": 0.9,
+  "coverage": 0.99,
+  "rho": 0.9,
+  "q_loss": 0.8,
+  "q_structure": 0.2,
+  "topk": 10,
+  "chunk_size": 8192
+}
+Epoch: 001, loss: 5.32119, R@20: 0.062945, N@20: 0.051923, time: 26.30 seconds
+Epoch: 002, loss: 4.97625, R@20: 0.067117, N@20: 0.055252, time: 26.41 seconds
+Epoch: 003, loss: 4.89484, R@20: 0.068290, N@20: 0.056378, time: 26.38 seconds
+Epoch: 004, loss: 4.85521, R@20: 0.069152, N@20: 0.057008, time: 25.98 seconds
+Epoch: 005, loss: 4.83002, R@20: 0.069861, N@20: 0.057568, time: 23.64 seconds
+Epoch: 006, loss: 4.81308, R@20: 0.070219, N@20: 0.057947, time: 26.41 seconds
+Epoch: 007, loss: 4.79965, R@20: 0.070409, N@20: 0.058198, time: 26.38 seconds
+Epoch: 008, loss: 4.78903, R@20: 0.070644, N@20: 0.058429, time: 23.84 seconds
+Epoch: 009, loss: 4.77987, R@20: 0.070929, N@20: 0.058558, time: 26.01 seconds
+Epoch: 010, loss: 4.77203, R@20: 0.071252, N@20: 0.058868, time: 22.42 seconds
+Epoch: 011, loss: 4.76499, R@20: 0.071294, N@20: 0.059046, time: 26.45 seconds
+Epoch: 012, loss: 4.75892, R@20: 0.071594, N@20: 0.059170, time: 22.20 seconds
+Epoch: 013, loss: 4.75323, R@20: 0.071706, N@20: 0.059316, time: 26.44 seconds
+Epoch: 014, loss: 4.74798, R@20: 0.071900, N@20: 0.059452, time: 26.40 seconds
+Epoch: 015, loss: 4.74336, R@20: 0.072096, N@20: 0.059704, time: 26.47 seconds
+Epoch: 016, loss: 4.73893, R@20: 0.072136, N@20: 0.059705, time: 22.10 seconds
+Epoch: 017, loss: 4.73505, R@20: 0.072244, N@20: 0.059791, time: 26.40 seconds
+Epoch: 018, loss: 4.73141, R@20: 0.072304, N@20: 0.059814, time: 26.39 seconds
+Epoch: 019, loss: 4.72781, R@20: 0.072505, N@20: 0.059983, time: 26.23 seconds
+Epoch: 020, loss: 4.72471, R@20: 0.072492, N@20: 0.060012, time: 23.48 seconds
+Epoch: 021, loss: 4.72187, R@20: 0.072513, N@20: 0.060048, time: 22.13 seconds
+Epoch: 022, loss: 4.71899, R@20: 0.072540, N@20: 0.060077, time: 26.38 seconds
+Epoch: 023, loss: 4.71637, R@20: 0.072555, N@20: 0.060129, time: 24.12 seconds
+Epoch: 024, loss: 4.71425, R@20: 0.072544, N@20: 0.060110, time: 25.79 seconds
+Epoch: 025, loss: 4.71161, R@20: 0.072583, N@20: 0.060098, time: 26.43 seconds
+Epoch: 026, loss: 4.70972, R@20: 0.072716, N@20: 0.060172, time: 26.39 seconds
+Epoch: 027, loss: 4.70774, R@20: 0.072553, N@20: 0.060060, time: 21.97 seconds
+Epoch: 028, loss: 4.70574, R@20: 0.072656, N@20: 0.060144, time: 26.38 seconds
+Epoch: 029, loss: 4.70379, R@20: 0.072800, N@20: 0.060245, time: 26.43 seconds
+Epoch: 030, loss: 4.70212, R@20: 0.072749, N@20: 0.060174, time: 26.44 seconds
+Epoch: 031, loss: 4.70038, R@20: 0.072892, N@20: 0.060354, time: 21.37 seconds
+Epoch: 032, loss: 4.69900, R@20: 0.072839, N@20: 0.060356, time: 23.98 seconds
+Epoch: 033, loss: 4.69770, R@20: 0.072767, N@20: 0.060277, time: 26.42 seconds
+Epoch: 034, loss: 4.69652, R@20: 0.072714, N@20: 0.060305, time: 26.39 seconds
+Epoch: 035, loss: 4.69489, R@20: 0.072784, N@20: 0.060324, time: 22.51 seconds
+Epoch: 036, loss: 4.69354, R@20: 0.073042, N@20: 0.060423, time: 26.37 seconds
+Epoch: 037, loss: 4.69225, R@20: 0.072922, N@20: 0.060437, time: 26.40 seconds
+Epoch: 038, loss: 4.69108, R@20: 0.072846, N@20: 0.060419, time: 25.24 seconds
+Epoch: 039, loss: 4.69004, R@20: 0.073029, N@20: 0.060456, time: 24.68 seconds
+Epoch: 040, loss: 4.68886, R@20: 0.072801, N@20: 0.060412, time: 26.43 seconds
+Epoch: 041, loss: 4.68819, R@20: 0.072758, N@20: 0.060403, time: 26.42 seconds
+Epoch: 042, loss: 4.68707, R@20: 0.072953, N@20: 0.060518, time: 21.98 seconds
+Epoch: 043, loss: 4.68593, R@20: 0.072944, N@20: 0.060526, time: 26.41 seconds
+Epoch: 044, loss: 4.68514, R@20: 0.073043, N@20: 0.060571, time: 26.42 seconds
+Epoch: 045, loss: 4.68397, R@20: 0.073031, N@20: 0.060573, time: 26.39 seconds
+Epoch: 046, loss: 4.68321, R@20: 0.072900, N@20: 0.060511, time: 22.17 seconds
+Epoch: 047, loss: 4.68252, R@20: 0.072991, N@20: 0.060597, time: 26.39 seconds
+Epoch: 048, loss: 4.68140, R@20: 0.073077, N@20: 0.060580, time: 26.36 seconds
+Epoch: 049, loss: 4.68084, R@20: 0.072955, N@20: 0.060592, time: 26.02 seconds
+Epoch: 050, loss: 4.68021, R@20: 0.073029, N@20: 0.060619, time: 24.05 seconds
+Epoch: 051, loss: 4.67936, R@20: 0.072936, N@20: 0.060607, time: 26.36 seconds
+Epoch: 052, loss: 4.67881, R@20: 0.073049, N@20: 0.060638, time: 26.40 seconds
+Epoch: 053, loss: 4.67798, R@20: 0.072960, N@20: 0.060650, time: 20.35 seconds
+Epoch: 054, loss: 4.67739, R@20: 0.072940, N@20: 0.060604, time: 25.99 seconds
+Epoch: 055, loss: 4.67631, R@20: 0.072952, N@20: 0.060645, time: 26.38 seconds
+Epoch: 056, loss: 4.67584, R@20: 0.072992, N@20: 0.060623, time: 26.40 seconds
+Epoch: 057, loss: 4.67517, R@20: 0.072863, N@20: 0.060609, time: 22.12 seconds
+Epoch: 058, loss: 4.67481, R@20: 0.072912, N@20: 0.060633, time: 26.38 seconds
+Epoch: 059, loss: 4.67429, R@20: 0.072908, N@20: 0.060609, time: 26.40 seconds
+Epoch: 060, loss: 4.67360, R@20: 0.073023, N@20: 0.060669, time: 26.39 seconds
+Epoch: 061, loss: 4.67300, R@20: 0.073048, N@20: 0.060695, time: 22.20 seconds
+Epoch: 062, loss: 4.67253, R@20: 0.073073, N@20: 0.060710, time: 26.49 seconds
+Epoch: 063, loss: 4.67182, R@20: 0.072990, N@20: 0.060697, time: 23.92 seconds
+Epoch: 064, loss: 4.67143, R@20: 0.072953, N@20: 0.060667, time: 26.01 seconds
+Epoch: 065, loss: 4.67110, R@20: 0.073042, N@20: 0.060738, time: 23.14 seconds
+Epoch: 066, loss: 4.67051, R@20: 0.073237, N@20: 0.060818, time: 26.40 seconds
+Epoch: 067, loss: 4.66998, R@20: 0.073234, N@20: 0.060822, time: 26.41 seconds
+Epoch: 068, loss: 4.66948, R@20: 0.073051, N@20: 0.060736, time: 24.61 seconds
+Epoch: 069, loss: 4.66904, R@20: 0.073152, N@20: 0.060764, time: 25.23 seconds
+Epoch: 070, loss: 4.66851, R@20: 0.073118, N@20: 0.060733, time: 26.36 seconds
+Epoch: 071, loss: 4.66803, R@20: 0.073215, N@20: 0.060774, time: 26.42 seconds
+Epoch: 072, loss: 4.66782, R@20: 0.073096, N@20: 0.060764, time: 22.38 seconds
+Epoch: 073, loss: 4.66720, R@20: 0.073037, N@20: 0.060768, time: 26.40 seconds
+Epoch: 074, loss: 4.66686, R@20: 0.072987, N@20: 0.060724, time: 22.41 seconds
+Epoch: 075, loss: 4.66630, R@20: 0.073215, N@20: 0.060829, time: 26.48 seconds
+Epoch: 076, loss: 4.66631, R@20: 0.073112, N@20: 0.060826, time: 22.25 seconds
+Epoch: 077, loss: 4.66575, R@20: 0.073074, N@20: 0.060792, time: 26.34 seconds
+Epoch: 078, loss: 4.66537, R@20: 0.073224, N@20: 0.060859, time: 26.42 seconds
+Epoch: 079, loss: 4.66491, R@20: 0.073211, N@20: 0.060834, time: 26.34 seconds
+Epoch: 080, loss: 4.66457, R@20: 0.073255, N@20: 0.060847, time: 22.62 seconds
+Epoch: 081, loss: 4.66420, R@20: 0.073367, N@20: 0.060930, time: 26.42 seconds
+Epoch: 082, loss: 4.66365, R@20: 0.073408, N@20: 0.060906, time: 26.42 seconds
+Epoch: 083, loss: 4.66356, R@20: 0.073352, N@20: 0.060864, time: 24.91 seconds
+Epoch: 084, loss: 4.66324, R@20: 0.073485, N@20: 0.060980, time: 24.77 seconds
+Epoch: 085, loss: 4.66276, R@20: 0.073263, N@20: 0.060880, time: 22.33 seconds
+Epoch: 086, loss: 4.66269, R@20: 0.073354, N@20: 0.060931, time: 26.36 seconds
+Epoch: 087, loss: 4.66226, R@20: 0.073454, N@20: 0.060995, time: 23.22 seconds
+Epoch: 088, loss: 4.66192, R@20: 0.073306, N@20: 0.060913, time: 26.43 seconds
+Epoch: 089, loss: 4.66179, R@20: 0.073467, N@20: 0.061006, time: 26.39 seconds
+Epoch: 090, loss: 4.66145, R@20: 0.073452, N@20: 0.060975, time: 26.40 seconds
+Epoch: 091, loss: 4.66081, R@20: 0.073423, N@20: 0.060944, time: 21.98 seconds
+Epoch: 092, loss: 4.66079, R@20: 0.073410, N@20: 0.060965, time: 26.37 seconds
+Epoch: 093, loss: 4.66049, R@20: 0.073522, N@20: 0.061039, time: 26.42 seconds
+Epoch: 094, loss: 4.66019, R@20: 0.073442, N@20: 0.060991, time: 26.43 seconds
+Epoch: 095, loss: 4.65982, R@20: 0.073482, N@20: 0.061038, time: 19.99 seconds
+Epoch: 096, loss: 4.65960, R@20: 0.073514, N@20: 0.061020, time: 25.57 seconds
+Epoch: 097, loss: 4.65935, R@20: 0.073505, N@20: 0.061010, time: 26.39 seconds
+Epoch: 098, loss: 4.65909, R@20: 0.073485, N@20: 0.061006, time: 26.42 seconds
+Epoch: 099, loss: 4.65882, R@20: 0.073383, N@20: 0.060988, time: 23.13 seconds
+Epoch: 100, loss: 4.65851, R@20: 0.073454, N@20: 0.060973, time: 26.40 seconds
+Epoch: 101, loss: 4.65830, R@20: 0.073454, N@20: 0.061012, time: 26.37 seconds
+Epoch: 102, loss: 4.65810, R@20: 0.073468, N@20: 0.060986, time: 24.78 seconds
+Epoch: 103, loss: 4.65777, R@20: 0.073540, N@20: 0.061043, time: 25.22 seconds
+Epoch: 104, loss: 4.65752, R@20: 0.073556, N@20: 0.061126, time: 26.12 seconds
+Epoch: 105, loss: 4.65719, R@20: 0.073587, N@20: 0.061133, time: 26.57 seconds
+Epoch: 106, loss: 4.65703, R@20: 0.073676, N@20: 0.061158, time: 21.11 seconds
+Epoch: 107, loss: 4.65695, R@20: 0.073647, N@20: 0.061084, time: 26.33 seconds
+Epoch: 108, loss: 4.65691, R@20: 0.073499, N@20: 0.061017, time: 26.43 seconds
+Epoch: 109, loss: 4.65647, R@20: 0.073632, N@20: 0.061127, time: 26.43 seconds
+Epoch: 110, loss: 4.65617, R@20: 0.073597, N@20: 0.061064, time: 22.19 seconds
+Epoch: 111, loss: 4.65587, R@20: 0.073602, N@20: 0.061066, time: 26.47 seconds
+Epoch: 112, loss: 4.65588, R@20: 0.073603, N@20: 0.061079, time: 26.39 seconds
+Epoch: 113, loss: 4.65558, R@20: 0.073558, N@20: 0.061054, time: 25.82 seconds
+Epoch: 114, loss: 4.65537, R@20: 0.073642, N@20: 0.061070, time: 23.61 seconds
+Epoch: 115, loss: 4.65516, R@20: 0.073716, N@20: 0.061096, time: 26.22 seconds
+Epoch: 116, loss: 4.65500, R@20: 0.073578, N@20: 0.061096, time: 26.50 seconds
+Epoch: 117, loss: 4.65459, R@20: 0.073569, N@20: 0.061125, time: 20.62 seconds
+Epoch: 118, loss: 4.65444, R@20: 0.073581, N@20: 0.061076, time: 25.47 seconds
+Epoch: 119, loss: 4.65414, R@20: 0.073671, N@20: 0.061117, time: 26.42 seconds
+Epoch: 120, loss: 4.65402, R@20: 0.073666, N@20: 0.061117, time: 26.36 seconds
+Epoch: 121, loss: 4.65397, R@20: 0.073660, N@20: 0.061159, time: 22.23 seconds
+Epoch: 122, loss: 4.65375, R@20: 0.073660, N@20: 0.061156, time: 26.47 seconds
+Epoch: 123, loss: 4.65374, R@20: 0.073681, N@20: 0.061170, time: 26.41 seconds
+Epoch: 124, loss: 4.65333, R@20: 0.073626, N@20: 0.061103, time: 26.40 seconds
+Epoch: 125, loss: 4.65323, R@20: 0.073685, N@20: 0.061154, time: 22.19 seconds
+Epoch: 126, loss: 4.65280, R@20: 0.073582, N@20: 0.061110, time: 26.38 seconds
+Epoch: 127, loss: 4.65283, R@20: 0.073661, N@20: 0.061201, time: 23.65 seconds
+Epoch: 128, loss: 4.65255, R@20: 0.073531, N@20: 0.061084, time: 26.33 seconds
+Epoch: 129, loss: 4.65219, R@20: 0.073650, N@20: 0.061115, time: 22.65 seconds
+Epoch: 130, loss: 4.65230, R@20: 0.073480, N@20: 0.061085, time: 26.38 seconds
+Epoch: 131, loss: 4.65199, R@20: 0.073523, N@20: 0.061090, time: 26.38 seconds
+Epoch: 132, loss: 4.65183, R@20: 0.073430, N@20: 0.061075, time: 25.16 seconds
+Epoch: 133, loss: 4.65179, R@20: 0.073552, N@20: 0.061101, time: 24.56 seconds
+Epoch: 134, loss: 4.65166, R@20: 0.073668, N@20: 0.061170, time: 26.40 seconds
+Epoch: 135, loss: 4.65150, R@20: 0.073676, N@20: 0.061190, time: 26.42 seconds
+
+========== BEST RESULT ==========
+Best Epoch: 115
+Recall@20: 0.073716, NDCG@20: 0.061096
+Log saved to: /root/autodl-tmp/SDR-GCF/log/SDR-GCF_yelp2018_ssm_20261105_144201_139380.log
