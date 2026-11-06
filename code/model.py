@@ -85,8 +85,6 @@ class SDRGCF(nn.Module):
             instance_loss = (u - i).square().sum(dim=-1)
             uniformity = self.uniformity(u) + self.uniformity(i)
             loss = instance_loss.mean() + self.config['uniformity'] * uniformity
-
-        # AU contributes alignment only; batch uniformity never enters the edge EMA.
         return loss, instance_loss.detach()
 
     def uniformity(self, x):
